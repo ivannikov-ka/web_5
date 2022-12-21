@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/product.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Clothes</title>
+    <script src="../assets/js/product.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="left-part">
+          <a href="../pages/catalog.html" style="text-decoration: none">
+            <img src="../assets/images/logo_text.svg" alt="logo" />
+          </a>
+          <a href="../pages/catalog.html">
+            <b>мужчинам</b>
+          </a>
+          <a href="../pages/catalog.html">женщинам</a>
+        </div>
+        <div class="burger-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </div>
+
+        <div class="right-part">
+          <a href="../pages/cart.html">
+            <p class="cart-count">~</p>
+            <img src="../assets/images/beg.svg" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="item-picture">
+            <img src="https://via.placeholder.com/350x150" alt="" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="item-info">
+            <div class="thumbnails"></div>
+            <div class="info">
+              <h1 id="product-name"></h1>
+              <div class="sizes"></div>
+              <div class="color color-brown">
+                <div class="color-white color-ball"></div>
+              </div>
+              <a href="" id="href-edit">редактировать</a>
+              <button class="add-cart" id="add-btn">
+                <span class="price">~~~~ Р</span>
+                <span>+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

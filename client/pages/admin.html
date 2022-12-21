@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Clothes</title>
+  </head>
+  <script src="../assets/js/admin.js"></script>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="../pages/catalog.html" style="text-decoration: none">
+          <img src="../assets/images/logo_text.svg" alt="logo" />
+          <span>ADMIN</span>
+        </a>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <h3>Товар</h3>
+      <div class="pictures-wrapper" id="pictures-wrapper">
+        <div class="button-wrapper" id="button-wrapper">
+          <button id="file-load">+</button>
+          <input
+            type="file"
+            hidden
+            name=""
+            id="input-file"
+            multiple
+            accept="image/jpeg"
+          />
+        </div>
+      </div>
+
+      <input type="text" placeholder="Введите название" id="product-name" />
+      <div class="color-wrapper">
+        <select id="color-select">
+          <option value="" selected disabled>Выберите цвет</option>
+        </select>
+        <div class="color">
+          <div class="color-ball" id="color-ball"></div>
+        </div>
+      </div>
+      <div class="checkboxs-wrapper" id="checkboxs-wrapper"></div>
+      <div class="genders" id="genders-product">
+        <span class="active">мужчинам</span>
+        <span>женщинам</span>
+      </div>
+
+      <select id="select-category">
+        <option value="" selected disabled>Выберите категорию</option>
+      </select>
+      <div class="price-wrapper">
+        <input type="text" placeholder="Введите цену" id="price-input" />
+        <span>Р</span>
+      </div>
+      <button class="save-btn" id="add-product">ДОБАВИТЬ</button>
+      <div class="category-add">
+        <h3>Категория</h3>
+        <input
+          type="text"
+          placeholder="Введите название категории"
+          id="add-category-name"
+        />
+        <div class="genders" id="genders-category">
+          <span class="active">мужчинам</span>
+          <span>женщинам</span>
+        </div>
+        <button class="save-btn" id="add-category-btn">ДОБАВИТЬ</button>
+      </div>
+      <div class="size-add">
+        <h3>Размер</h3>
+        <div class="size-string">
+          <span> EUR </span>
+          <input
+            type="text"
+            placeholder="Введите EUR размер"
+            id="add-size-eur"
+          />
+        </div>
+        <div class="size-string">
+          <span>RUS</span>
+          <input
+            type="text"
+            placeholder="Введите RUS размер"
+            id="add-size-rus"
+          />
+        </div>
+        <button class="save-btn" id="add-size-btn">ДОБАВИТЬ</button>
+      </div>
+      <div class="color-add">
+        <h3>Цвет</h3>
+        <div class="color-string">
+          <span> Название </span>
+          <input
+            type="text"
+            placeholder="Введите название"
+            id="add-color-name"
+          />
+        </div>
+        <div class="color-string">
+          <span>Hex</span>
+          <div class="color">
+            <div class="color-ball" id="color-ball-add"></div>
+          </div>
+          <input type="text" placeholder="Введите HEX" id="add-color-hex" />
+        </div>
+        <button class="save-btn" id="add-color">ДОБАВИТЬ</button>
+      </div>
+    </div>
+  </body>
+</html>
